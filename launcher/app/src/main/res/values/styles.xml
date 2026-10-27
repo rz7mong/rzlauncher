@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TvHome" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <!-- MOD 1.2.14-wallbg-cpudiag: the window background used to be
+             @drawable/wallpaper (the bundled Bawaan composition), so any
+             moment the video layer had no frame covering the window, the
+             window itself painted Bawaan underneath — the user's
+             "Bawaan flashes briefly on scroll". Black now: a video gap
+             shows black, never Bawaan. The designed error fallbacks
+             (wall/wallBlur ImageViews) are untouched and still show the
+             static Bawaan image when a video genuinely fails. -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">#FF0B0B0F</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <!-- Voice search floats over whatever is on screen. -->
+    <style name="Theme.TvHome.Voice" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MOD 1.2.6-boost: rocket glyph drawn fresh for this fork (do NOT copy
+     the stock launcher's sserratty drawable). A small rocket pointing
+     up-right: body, round window, two fins, and a flame. Pill icons are
+     tinted with Ui.INK at runtime, so the fill colour here is nominal. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M12,2c2.8,2.2 4.2,5.4 4.2,9.2l-8.4,0C7.8,7.4 9.2,4.2 12,2z" />
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M12,7.2a1.8,1.8 0,1 1,0 3.6a1.8,1.8 0,1 1,0 -3.6z" />
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M7.8,11.2L3.5,16.5l4.3,-0.8zM16.2,11.2l0.8,4.3 3.5,-0.8z" />
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M10.2,14.5h3.6l-0.9,3.2 -0.9,2.8 -0.9,-2.8z" />
+</vector>
